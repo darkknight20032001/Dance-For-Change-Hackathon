@@ -37,7 +37,7 @@ const DanceEventsForm = () => {
   ) : (
     <>
       <h2 style={{ textAlign: "center", marginTop: "10rem" }}>
-        Your have successfully register
+        Your have successfully register to {values.state.eventName}
       </h2>
       <p style={{ display: "none" }}>
         {setTimeout(() => {

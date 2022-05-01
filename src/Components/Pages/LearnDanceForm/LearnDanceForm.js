@@ -12,6 +12,7 @@ const LearnDanceForm = () => {
   });
 
   const [check, setCheck] = useState(false);
+  const [submitDance, setSubmitDance] = useState(false);
   let myStorage = {};
   if (localStorage.length > 0) {
     myStorage = localStorage.getItem("details");
@@ -30,6 +31,8 @@ const LearnDanceForm = () => {
     obj.trainerName = values.state.trainerName;
     obj.danceStyle = values.state.danceStyle;
     localStorage.setItem("details", JSON.stringify(obj));
+    setCheck(true);
+    setSubmitDance(true);
     // navigate("/");
   };
 
@@ -91,11 +94,22 @@ const LearnDanceForm = () => {
         </form>
       </div>
     </div>
-  ) : (
+  ) : !submitDance ? (
     <div className="message">
       <h1>You have already registered with {myStorage.trainerName}.</h1>
       <Button onClick={onUnregisterClickHandler}>Unregister</Button>
     </div>
+  ) : (
+    <>
+      <h2 style={{ textAlign: "center", marginTop: "10rem" }}>
+        Your have successfully register to {values.state.trainerName}
+      </h2>
+      <p style={{ display: "none" }}>
+        {setTimeout(() => {
+          navigate("/");
+        }, 2000)}
+      </p>
+    </>
   );
 };
 
