@@ -33,7 +33,6 @@ const LearnDanceForm = () => {
     localStorage.setItem("details", JSON.stringify(obj));
     setCheck(true);
     setSubmitDance(true);
-    // navigate("/");
   };
 
   const onUnregisterClickHandler = () => {
