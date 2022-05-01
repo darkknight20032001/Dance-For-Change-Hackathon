@@ -1,0 +1,24 @@
+.learn_dance {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(227.59deg, #114e42 23.75%, #d76450 93.96%);
+}
+.learn_dance__btn {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.learn_dance__btn button {
+  border-radius: 0;
+  padding: 1rem;
+}
+.learn_dance__items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 50rem;
+  margin: 4rem auto 0 auto;
+  grid-row-gap: 42px;
+  justify-items: center;
+}
