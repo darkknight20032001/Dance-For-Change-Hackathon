@@ -4,7 +4,7 @@ import "./HomePage.css";
 const HomePage = () => {
   return (
     <div className="home">
-      <h1>Dance Floor</h1>
+      <h2>Dance for Change</h2>
       <Cards />
     </div>
   );

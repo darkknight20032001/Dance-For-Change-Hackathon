@@ -7,9 +7,9 @@ import learn_dance from "../../assets/Images/learn_dance.gif";
 const Cards = () => {
   const navigate = useNavigate();
   const learnDanceContent =
-    "Hello everyone. Here you can learn dance from best dance teachers in your city. So click here to apply for dance classes.";
+    "Hello everyone.Here we bring free dance training courses by India's best dancers/mentors free of cost";
   const danceEventContent =
-    "Click here to get all the dance events happening in your city. Participate and win many prizes.";
+    "Click here to get all the dance events and showcase your skills.Participate and shine.";
   return (
     <div className="cards">
       <CardUi
