@@ -1,43 +1,43 @@
+import remo from "../assets/Images/remo.jpeg";
+import raghav from "../assets/Images/raghav.jpg";
+import shakti from "../assets/Images/shakti.jpg";
+import puneet from "../assets/Images/puneet.jpg";
 const LearnDanceDatabase = [
   {
     id: 1,
-    danceStyle: "Kathak",
+    danceStyle: "Jazz Dance",
     trainerName: "Remo D Souza",
     location: "Dwarka",
-    trainerImage:
-      "https://www.bollywoodhungama.com/wp-content/uploads/2020/12/I-am-much-better-says-Remo-D-Souza.jpeg",
-    trainerVideo: "https://www.youtube.com/embed/MLlU2_sbFWY",
-    trainerDescription: "Lets learn Kathak with Sandeep Singh",
+    trainerImage: remo,
+    trainerVideo: "https://www.youtube.com/embed/YfCJUOvvY9Y",
+    trainerDescription: "Lets learn Jazz with Remo D Souza",
   },
   {
     id: 2,
-    danceStyle: "Kathak",
+    danceStyle: "Hip-Hop",
     trainerName: "Shakti Mohan",
     location: "Lucknow",
-    trainerImage:
-      "https://static.toiimg.com/photo/msid-75230559/75230559.jpg?136712",
-    trainerVideo: "https://www.youtube.com/embed/MLlU2_sbFWY",
-    trainerDescription: "Lets learn Kathak with Mini Ahuja",
+    trainerImage: shakti,
+    trainerVideo: "https://www.youtube.com/embed/wOFHJusNAVY",
+    trainerDescription: "Lets learn Hip-Hop with Shakti Mohan",
   },
   {
     id: 3,
     danceStyle: "Slow Motion",
     trainerName: "Raghav Juyal",
     location: "New Delhi",
-    trainerImage:
-      "https://i0.wp.com/www.opindia.com/wp-content/uploads/2021/11/raghav-juyal-don-t-like-to-go_1200x768.jpeg?fit=770%2C433&ssl=1",
-    trainerVideo: "https://www.youtube.com/embed/MLlU2_sbFWY",
-    trainerDescription: "Lets learn Kathak with Raghav Chaddha",
+    trainerImage: raghav,
+    trainerVideo: "https://www.youtube.com/embed/Nt0NHdCqjQ4",
+    trainerDescription: "Lets learn Slow Motion with Raghav Juyal",
   },
   {
     id: 4,
-    danceStyle: "Street Boys",
-    trainerName: "Punnet Pathak",
+    danceStyle: "Tap Dance",
+    trainerName: "Puneet Pathak",
     location: "Mumbai",
-    trainerImage:
-      "https://www.iwmbuzz.com/wp-content/uploads/2018/10/punit.jpg",
-    trainerVideo: "https://www.youtube.com/embed/MLlU2_sbFWY",
-    trainerDescription: "Lets learn Kathak with Wazir Khan",
+    trainerImage: puneet,
+    trainerVideo: "https://www.youtube.com/embed/N60LKtc_kSg",
+    trainerDescription: "Lets learn Tap Dance with Puneet Pathak",
   },
 ];
 export default LearnDanceDatabase;
