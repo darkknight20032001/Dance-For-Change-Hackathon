@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./LearnDanceCard.css";
 const LearnDanceCard = ({
@@ -9,14 +9,14 @@ const LearnDanceCard = ({
   danceStyle,
 }) => {
   const navigate = useNavigate();
-  
+
   const [showImg, setShowImg] = useState(true);
 
   return (
     <div className="card">
       <div>
         {showImg ? (
-          <img src={trainerImage} />
+          <img src={trainerImage} alt={trainerName} />
         ) : (
           <iframe
             src={trainerVideo}
@@ -40,11 +40,10 @@ const LearnDanceCard = ({
 
         <p
           onClick={() =>
-            navigate("/LearnDance/LearnDanceForm", {
+            navigate("/learn-dance/register", {
               state: {
                 trainerName: trainerName,
                 danceStyle: danceStyle,
-             
               },
             })
           }

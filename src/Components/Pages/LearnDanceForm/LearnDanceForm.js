@@ -10,7 +10,7 @@ const LearnDanceForm = () => {
     Age: ``,
     Area: ``,
   });
-  const [submitted, setSubmitted] = useState(false);
+
   const [check, setCheck] = useState(false);
   let myStorage = {};
   if (localStorage.length > 0) {
@@ -30,13 +30,12 @@ const LearnDanceForm = () => {
     obj.trainerName = values.state.trainerName;
     obj.danceStyle = values.state.danceStyle;
     localStorage.setItem("details", JSON.stringify(obj));
-    setSubmitted(true);
-    navigate("/");
+    // navigate("/");
   };
 
   const onUnregisterClickHandler = () => {
     localStorage.clear();
-    navigate("/LearnDance");
+    navigate("/learn-dance");
   };
   return !check ? (
     <div className="learn_dance__user_form">
@@ -71,7 +70,7 @@ const LearnDanceForm = () => {
               });
             }}
           />
-          <label htmlFor="Are">Area</label>
+          <label htmlFor="Area">Area</label>
           <input
             type="text"
             id="area"

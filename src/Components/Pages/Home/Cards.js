@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import CardUi from "../../UI/CardUi";
 import "./Cards.css";
@@ -16,13 +16,13 @@ const Cards = () => {
         head="Learn Dance"
         content={learnDanceContent}
         imgSrc={learn_dance}
-        clickHandler={() => navigate("/LearnDance")}
+        clickHandler={() => navigate("/learn-dance")}
       />
       <CardUi
         head="Dance Event"
         content={danceEventContent}
         imgSrc={dance_events}
-        clickHandler={() => navigate("/DanceEvent")}
+        clickHandler={() => navigate("/dance-events")}
       />
     </div>
   );
