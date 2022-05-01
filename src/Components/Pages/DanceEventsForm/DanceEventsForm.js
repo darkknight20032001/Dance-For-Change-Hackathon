@@ -69,13 +69,13 @@ const DanceEventsForm = () => {
         </div>
       </div>
     ) : (
-      <h2 style={{ margin: "9rem" }}>
+      <h2 style={{ position: "absolute", top: "37%", left: "21%" }}>
         You have already registered to {values.state.eventName}
       </h2>
     )
   ) : (
     <>
-      <h2 style={{ textAlign: "center", marginTop: "10rem" }}>
+      <h2 style={{ position: "absolute", top: "37%", left: "15%" }}>
         Your have successfully register to {values.state.eventName}
       </h2>
       <p style={{ display: "none" }}>

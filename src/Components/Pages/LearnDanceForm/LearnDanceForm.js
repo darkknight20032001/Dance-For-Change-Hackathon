@@ -23,6 +23,7 @@ const LearnDanceForm = () => {
     if (localStorage.length > 0) {
       setCheck(true);
     }
+    // eslint-disable-next-line
   }, []);
 
   const onSubmitHandler = (e) => {
