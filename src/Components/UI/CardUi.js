@@ -19,13 +19,18 @@ export default function CardUi({ head, content, imgSrc, clickHandler }) {
       <CardActionArea>
         <CardMedia component="img" height="247px" image={imgSrc} alt={head} />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography
+            gutterBottom
+            variant="h5"
+            component="div"
+            sx={{ fontFamily: `'Libre Bodoni', serif` }}
+          >
             {head}
           </Typography>
           <Typography
             variant="body2"
             color="text.secondary"
-            sx={{ color: "white" }}
+            sx={{ color: "white", fontFamily: `'Playfair Display', serif` }}
           >
             {content}
           </Typography>

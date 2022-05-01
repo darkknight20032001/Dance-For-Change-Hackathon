@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
 .event_card {
   display: flex;
   margin-top: 2rem;
@@ -6,8 +7,8 @@
   cursor: pointer;
   transition: all 0.5s ease;
 }
-.event_card:hover{
-    box-shadow: 10px 10px 10px black;
+.event_card:hover {
+  box-shadow: 10px 10px 10px black;
 }
 .event_card__logo img {
   width: 8rem;
@@ -19,6 +20,10 @@
   justify-content: space-evenly;
   width: 28rem;
   padding-left: 18px;
+}
+.event_card__details__description {
+  font-family: "Playfair Display", serif;
+  color: rgb(228, 228, 23);
 }
 .event_card__place {
   display: flex;

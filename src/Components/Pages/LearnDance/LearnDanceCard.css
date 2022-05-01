@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
 .card {
   width: 16rem;
   background: #383636;
@@ -47,7 +48,9 @@
 .card_content p {
   cursor: pointer;
   padding: 5px;
+  color: rgb(228, 228, 23);
+  font-family: 'Playfair Display', serif;
 }
 .card_content p:hover {
-  color: rgb(228, 228, 23);
+  color: rgb(157, 157, 8);
 }
