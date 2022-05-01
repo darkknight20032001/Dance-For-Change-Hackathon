@@ -20,7 +20,7 @@ const LearnDanceForm = () => {
   }
 
   useEffect(() => {
-    if (localStorage.length > 0) {
+    if (localStorage.getItem("details") !== null) {
       setCheck(true);
     }
     // eslint-disable-next-line
@@ -37,8 +37,8 @@ const LearnDanceForm = () => {
   };
 
   const onUnregisterClickHandler = () => {
-    localStorage.clear();
-    navigate("/learn-dance");
+    localStorage.removeItem("details");
+    setCheck(false);
   };
   return !check ? (
     <div className="learn_dance__user_form">
